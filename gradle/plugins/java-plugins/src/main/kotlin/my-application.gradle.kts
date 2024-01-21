@@ -24,5 +24,16 @@ tasks.register<JarCount>("countJars") {
     allJars.from(tasks.jar)
     allJars.from(configurations.runtimeClasspath)
 
-    countFile.set(layout.buildDirectory.dir("gen/count.txt"))
+    countFile.set(layout.buildDirectory.file("gen/count.txt"))
+}
+
+tasks.build {
+    dependsOn(tasks.named("bundle"))
+}
+
+tasks.register("buildAll") {
+    description = "Builds even more!"
+
+    dependsOn(tasks.build)
+    dependsOn(tasks.named("countJars"))
 }

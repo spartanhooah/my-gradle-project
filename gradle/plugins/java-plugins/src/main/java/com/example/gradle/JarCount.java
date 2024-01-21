@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.util.Collections;
 import java.util.Set;
 
-@CacheableTask
+//@CacheableTask
 public abstract class JarCount extends DefaultTask {
     // ConfigurableFileCollection -> @InputFiles
     // RegularFileProperty -> @InputFile
