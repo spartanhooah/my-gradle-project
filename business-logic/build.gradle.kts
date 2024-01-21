@@ -11,4 +11,7 @@ dependencies {
     // This uses libs.versions.toml for centralized dependency declarations
     implementation(libs.commons.lang)
     implementation(libs.slf4j.api)
+
+    testImplementation(libs.junit.api)
+    testImplementation(libs.junit.engine)
 }
