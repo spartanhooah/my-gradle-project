@@ -3,6 +3,12 @@ plugins {
 }
 
 dependencies {
+    // Could use the platform we created to use centralized versions
+//    implementation(platform("com.example:platform"))
+
     implementation(project(":data-model"))
-    implementation("org.apache.commons:commons-lang3:3.14.0")
+
+    // This uses libs.versions.toml for centralized dependency declarations
+    implementation(libs.commons.lang)
+    implementation(libs.slf4j.api)
 }

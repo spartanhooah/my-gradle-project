@@ -1,0 +1,8 @@
+# alternative to platform strategy for centralizing dependency versions
+[versions]
+slf4j = "2.0.11"
+
+[libraries]
+commons-lang = "org.apache.commons:commons-lang3:3.14.0"
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
