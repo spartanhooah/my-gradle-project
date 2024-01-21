@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/classes/java/main/
+/business-logic/build/
+/business-logic/build/classes/java/main/
+/data-model/build/
+/data-model/build/classes/java/main/
+/gradle/plugins/.gradle/
+/gradle/plugins/java-plugins/build/
